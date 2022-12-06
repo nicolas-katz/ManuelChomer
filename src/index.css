@@ -6,8 +6,9 @@
 }
 
 :root {
-  --colorPrincipal: rgb(95, 49, 179);
-  --colorHover: rgba(95, 49, 179, 0.329);
+  --colorPrincipal: rgb(162, 126, 230);
+  --colorRGBA: rgba(95, 49, 179, 0.329);
+  --colorHover: rgba(25, 12, 48, 0.329);
 }
 
 main {

@@ -290,7 +290,7 @@ export default function Product() {
                         Un hogar confortable y funcional para sus necesidades, con lo más elemental sin sacrificar su comodidad.
                     </p>
                 </div>
-                <a href="/">
+                <a href="/" target='_blank' rel="noopener noreferrer">
                     Brochure <BsCloudDownload />
                 </a>
             </div>

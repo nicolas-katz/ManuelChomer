@@ -137,7 +137,7 @@ export default function Brochure() {
               <h4>Conoce más nuestras micro viviendas</h4>
               <p>Descargate nuestro brochure para enterarte de todos los detalles y sacarte todas tus dudas.</p>
           </span>
-          <a href="/">Descargar <BsCloudDownload /></a>
+          <a href="/" target='_blank' rel="noopener noreferrer">Descargar <BsCloudDownload /></a>
         </div>
     </StyledBrochure>
   )

@@ -10,7 +10,7 @@ const StyledHeader = styled.header`
 
     width: 100%;
     height: max-content;
-    padding: 14px 20px;
+    padding: 10px 20px;
 
     background-color: transparent;
     transition: all .6s;
@@ -137,7 +137,7 @@ const StyledHeader = styled.header`
     }
 
     &.add__scroll_effect:not(.open__menu) {
-        background-color: #ffffff85;
+        background-color: white;
 
         & nav {
             & ul {
@@ -275,11 +275,11 @@ export default function Header() {
                     <div className='data__header__mobile'>
                         <div>
                             <h5>Email</h5>
-                            <a href='mailto:solhomearg@gmail.com' target='_blank'>solhomearg@gmail.com</a>
+                            <a href='mailto:solhomearg@gmail.com' target='_blank' rel="noopener noreferrer">solhomearg@gmail.com</a>
                         </div>
                         <div>
                             <h5>Descargas</h5>
-                            <a href='/' target='_blank'>Brochure</a>
+                            <a href='/' target='_blank' rel="noopener noreferrer">Brochure</a>
                         </div>
                     </div>
                 </ul>
