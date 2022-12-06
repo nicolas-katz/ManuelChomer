@@ -15,7 +15,7 @@ const StyledSlider = styled.div`
 
     & button {
         position: absolute;
-        bottom: -30px;
+        bottom: 4px;
         z-index: 1;
         
         &:first-child {
@@ -62,7 +62,7 @@ const StyledSlider = styled.div`
 
         & img {
             width: 100%;
-            height: 420px;
+            height: 520px;
             object-fit: cover;
         }
     }
