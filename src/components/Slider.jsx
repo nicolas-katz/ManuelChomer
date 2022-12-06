@@ -15,7 +15,7 @@ const StyledSlider = styled.div`
 
     & button {
         position: absolute;
-        bottom: 2px;
+        bottom: -30px;
         z-index: 1;
         
         &:first-child {
