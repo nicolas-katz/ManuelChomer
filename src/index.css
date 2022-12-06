@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', 'Roboto Slab', 'Montserrat', 'Inter Tight', 'Inter', 'Rubik', sans-serif, monospace;
+}
+
+:root {
+  --colorPrincipal: rgb(95, 49, 179);
+  --colorHover: rgba(95, 49, 179, 0.329);
+}
+
+main {
+  background-image: url(./assets/main.jpg);
+}
