@@ -1,12 +1,12 @@
 import { Fragment, useRef, useState, useEffect } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
-import video from '../assets/image1.jpg';
+// import video from '../assets/image1.jpg';
 import styled from 'styled-components';
 import { 
     IoClose 
 } from 'react-icons/all';
 
-const StyledVideo = styled.img`
+const StyledVideo = styled.video`
     width: 100%;
     max-height: 500px;
     margin-top: 60px;
@@ -94,8 +94,8 @@ export default function Modal({openModal, handleClose}) {
                     CERRAR
                   </div>
                   <StyledVideo
-                    src={video} 
-                    alt='Video de presentación - Sol Home'
+                    // src={video} 
+                    controls
                   >
                   </StyledVideo>
               </Dialog.Panel>

@@ -34,7 +34,9 @@ const StyledSlider = styled.div`
         justify-content: center;
 
         background-color: var(--colorPrincipal);
+        border: none;
         border-radius: 0;
+        outline: none;
         cursor: pointer;
         transition: all .6s;
 

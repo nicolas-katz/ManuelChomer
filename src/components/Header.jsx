@@ -10,7 +10,7 @@ const StyledHeader = styled.header`
 
     width: 100%;
     height: max-content;
-    padding: 20px;
+    padding: 14px 20px;
 
     background-color: transparent;
     transition: all .6s;
@@ -137,14 +137,13 @@ const StyledHeader = styled.header`
     }
 
     &.add__scroll_effect:not(.open__menu) {
-        background-color: #ffffff5c;
+        background-color: #ffffff85;
 
         & nav {
             & ul {
                 & li {
                     & a {
                         color: black;
-                        font-weight: 500;
                     }
                 }
             }
