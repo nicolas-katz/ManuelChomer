@@ -240,7 +240,7 @@ Error generating stack: `+o.message+`
     @media only screen and (min-width: 1024px) {
         & nav {
             & a img {
-                width: 120px;
+                width: 90px;
             }
             
             & ul {
@@ -263,10 +263,11 @@ Error generating stack: `+o.message+`
 
                 & li {
                     margin: 0;
-                    margin-left: 40px;
+                    margin-left: 36px;
                     
                     & a {
                         color: white;
+                        font-size: 15px;
                         font-weight: 400;
                     }
                 }
@@ -506,7 +507,7 @@ Error generating stack: `+o.message+`
 
         & img {
             width: 100%;
-            height: 420px;
+            height: 520px;
             object-fit: cover;
         }
     }
@@ -1533,7 +1534,7 @@ Error generating stack: `+o.message+`
     }
 
     a img {
-      width: 152px;
+      width: 120px;
       margin-bottom: 40px;
 
       object-fit: cover;
