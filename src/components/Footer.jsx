@@ -4,7 +4,7 @@ import {
   BsInstagram, 
   FaFacebookF
 } from 'react-icons/all';
-import Brand from '../assets/brand.png';
+import brand from '../assets/brand.png';
 
 
 const StyledFooter = styled.footer`
@@ -116,7 +116,7 @@ const StyledFooter = styled.footer`
     }
 
     a img {
-      width: 152px;
+      width: 120px;
       margin-bottom: 40px;
 
       object-fit: cover;
@@ -259,7 +259,7 @@ export default function Footer() {
         <div className='FooterBrand'>
           <a href="#home">
             <img 
-              src={Brand}
+              src={brand}
               alt='Sol Home - Micro Viviendas'
             />
           </a>

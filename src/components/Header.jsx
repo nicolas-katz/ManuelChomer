@@ -187,7 +187,7 @@ const StyledHeader = styled.header`
     @media only screen and (min-width: 1024px) {
         & nav {
             & a img {
-                width: 120px;
+                width: 90px;
             }
             
             & ul {
@@ -210,10 +210,11 @@ const StyledHeader = styled.header`
 
                 & li {
                     margin: 0;
-                    margin-left: 40px;
+                    margin-left: 36px;
                     
                     & a {
                         color: white;
+                        font-size: 15px;
                         font-weight: 400;
                     }
                 }

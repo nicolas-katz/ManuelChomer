@@ -91,9 +91,9 @@ export default function Slider() {
                     className={imgActual === index ? 'active' : ''}>
                     {imgActual === index &&
                     <img 
-                        src={image} 
+                       src={image} 
                         alt="Galería de fotos - Sol Home"
-                    />
+                    /> 
                     }
                 </div>
             ))}
