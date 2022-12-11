@@ -83,18 +83,22 @@ const StyledBenefits = styled.div`
                     font-size: 32px;
                 }
 
-                & h4 {
+                & span {
                     width: 100%;
-                    margin-left: 28px;
-
+                    
                     display: flex;
                     flex-direction: row;
                     align-items: center;
                     justify-content: space-between;
 
-                    color: white;
-                    font-size: 24px;
-                    font-weight: 400;
+                    & h4 {
+                        width: 100%;
+                        margin-left: 28px;
+
+                        color: white;
+                        font-size: 24px;
+                        font-weight: 400;
+                    }
 
                     & svg {
                         color: gainsboro;
@@ -116,10 +120,8 @@ const StyledBenefits = styled.div`
 
             &.active {
                 & div {
-                    & h4 {
-                        & svg {
-                            transform: rotate(180deg);
-                        }
+                    & span svg {
+                        transform: rotate(180deg);
                     }
                 }
 
@@ -141,14 +143,14 @@ const StyledBenefits = styled.div`
             line-height: 54px;
         }
 
-        .BenefitsContainer {
+        .benefits__container {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             align-items: center;
             justify-content: space-between;
 
-            .BenefitsBox {
+            .benefits__box {
                 width: 45%;
 
                 &:last-child {
@@ -185,8 +187,8 @@ const StyledBenefits = styled.div`
 
 export default function Benefits() {
     const handleOpen = (e) => {
-        document.querySelectorAll(".BenefitsContainer .BenefitsBox").forEach((element) => { 
-            if(element == e.target.parentNode.parentNode) {
+        document.querySelectorAll(".benefits__container .benefits__box").forEach((element) => { 
+            if(element == e.target.parentNode.parentNode.parentNode) {
                 element.classList.toggle('active');
             } else {
                 element.classList.remove('active');
@@ -199,84 +201,84 @@ export default function Benefits() {
             id='beneficios'>
             <h6>Beneficios</h6>
             <h3>Sol Home te ofrece una solución <span>única</span>.</h3>
-            <div className='BenefitsContainer'>
-                <div className='BenefitsBox'>
+            <div className='benefits__container'>
+                <div className='benefits__box'>
                     <div>
                         <AiOutlineStar />
-                        <h4 onClick={handleOpen}>
-                            Calidad
+                        <span onClick={handleOpen}>
+                            <h4>Calidad</h4>
                             <BsChevronDown />
-                        </h4>
+                        </span>
                     </div>
                     <p>Estos módulos habitacionales cuentan con calidad de primera mano en todas sus materiales y terminaciones.</p>
                 </div>
-                <div className='BenefitsBox'>
+                <div className='benefits__box'>
                     <div>
                         <FiFastForward />
-                        <h4 onClick={handleOpen}>
-                            Rapidez
+                        <span onClick={handleOpen}>
+                            <h4>Rapidez</h4>
                             <BsChevronDown />
-                        </h4>
+                        </span>
                     </div>
                     <p>El modulo se fabrica en solamente 30 dias, siendo la empresa N°1 en este aspecto en el mercado.</p>
                 </div>
-                <div className='BenefitsBox'>
+                <div className='benefits__box'>
                     <div>
                         <IoKeyOutline />
-                        <h4 onClick={handleOpen}>
-                            Llave en mano & 100% equipado
+                        <span onClick={handleOpen}>
+                            <h4>Llave en mano & 100% equipado</h4>
                             <BsChevronDown />
-                        </h4>
+                        </span>
                     </div>
                     <p>El Modulo se entrega completamente equipado, listo para ser habitado. Viene con electrodomésticos como heladera, TV Smart 32’, aire acondicionado, microondas y horno. Además, viene completo en mueblería de primera calidad y alto diseño.</p>
                 </div>
-                <div className='BenefitsBox'>
+                <div className='benefits__box'>
                     <div>
                         <MdAttachMoney />
-                        <h4 onClick={handleOpen}>
-                            Economico
+                        <span onClick={handleOpen}>
+                            <h4>Economico</h4>
                             <BsChevronDown />
-                        </h4>
+                        </span>
                     </div>
                     <p>Una de las virtudes de estas novedosas viviendas es que tiene costos más bajos de los que se encuentran en el mercado, ofreciendo una oportunidad para pensar creativamente una solución que sea económica.</p>
                 </div>
-                <div className='BenefitsBox'>
+                <div className='benefits__box'>
                     <div>
                         <BiGridAlt />
-                        <h4 onClick={handleOpen}>
-                            Ampliable
+                        <span onClick={handleOpen}>
+                            <h4>Ampliable</h4>
                             <BsChevronDown />
-                        </h4>
+                        </span>
                     </div>
                     <p>Es una construcción ver versátil, siempre se podrá ampliar con nuevos módulos, por lo que se puede empezar con un proyecto pequeño y luego planificar nuevos anexos.</p>
                 </div>
-                <div className='BenefitsBox'>
+                <div className='benefits__box'>
                     <div>
                         <BsSun />
-                        <h4 onClick={handleOpen}>
-                            Excelente aislamiento
+                        <span onClick={handleOpen}>
+                            <h4>Excelente aislamiento</h4>
                             <BsChevronDown />
-                        </h4>
+                        </span>
                     </div>
                     <p>Cuenta con termo paneles compuesto de aislación de espuma de poliuretano expandido de 50 mm en todas sus caras, otorgando un gran aislamiento térmico para temperaturas extremas.</p>
                 </div>
-                <div className='BenefitsBox'>
+                <div className='benefits__box'>
                     <div>
                         <BsTruck />
-                        <h4 onClick={handleOpen}>
-                            Transportable
+                        <span onClick={handleOpen}>
+                            <h4>Transportable</h4>
                             <BsChevronDown />
-                        </h4>
+                        </span>
                     </div>
                     <p>Estos módulos se caracterizan por ser movibles, asentandose sobre pilotes, siendo fácil de transportar y de instalar.</p>
                 </div>
-                <div className='BenefitsBox'>
+                <div className='benefits__box'>
                     <div>
                         <AiOutlineSafety />
-                        <h4 onClick={handleOpen}>
-                            Confort
+                        <span onClick={handleOpen}>
+                            <h4>Confort</h4>
                             <BsChevronDown />
-                        </h4>
+                        </span>
                     </div>
                     <p>Están diseñadas para lograr un óptimo uso del espacio con el que se cuenta, siendo una solución creativa y moderna a las necesidades habitacionales de aquellos que quieren vivir con lo más elemental sin sacrificar su comodidad.</p>
                 </div>
