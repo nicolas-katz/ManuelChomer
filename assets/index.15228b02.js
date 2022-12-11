@@ -834,18 +834,22 @@ Error generating stack: `+o.message+`
                     font-size: 32px;
                 }
 
-                & h4 {
+                & span {
                     width: 100%;
-                    margin-left: 28px;
-
+                    
                     display: flex;
                     flex-direction: row;
                     align-items: center;
                     justify-content: space-between;
 
-                    color: white;
-                    font-size: 24px;
-                    font-weight: 400;
+                    & h4 {
+                        width: 100%;
+                        margin-left: 28px;
+
+                        color: white;
+                        font-size: 24px;
+                        font-weight: 400;
+                    }
 
                     & svg {
                         color: gainsboro;
@@ -867,10 +871,8 @@ Error generating stack: `+o.message+`
 
             &.active {
                 & div {
-                    & h4 {
-                        & svg {
-                            transform: rotate(180deg);
-                        }
+                    & span svg {
+                        transform: rotate(180deg);
                     }
                 }
 
@@ -892,14 +894,14 @@ Error generating stack: `+o.message+`
             line-height: 54px;
         }
 
-        .BenefitsContainer {
+        .benefits__container {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             align-items: center;
             justify-content: space-between;
 
-            .BenefitsBox {
+            .benefits__box {
                 width: 45%;
 
                 &:last-child {
@@ -932,7 +934,7 @@ Error generating stack: `+o.message+`
             line-height: 60px;
         }
     }
-`;function yh(){const e=t=>{document.querySelectorAll(".BenefitsContainer .BenefitsBox").forEach(n=>{n==t.target.parentNode.parentNode?n.classList.toggle("active"):n.classList.remove("active")})};return E(vh,{id:"beneficios",children:[p("h6",{children:"Beneficios"}),E("h3",{children:["Sol Home te ofrece una soluci\xF3n ",p("span",{children:"\xFAnica"}),"."]}),E("div",{className:"BenefitsContainer",children:[E("div",{className:"BenefitsBox",children:[E("div",{children:[p(Z1,{}),E("h4",{onClick:e,children:["Calidad",p($t,{})]})]}),p("p",{children:"Estos m\xF3dulos habitacionales cuentan con calidad de primera mano en todas sus materiales y terminaciones."})]}),E("div",{className:"BenefitsBox",children:[E("div",{children:[p(Y1,{}),E("h4",{onClick:e,children:["Rapidez",p($t,{})]})]}),p("p",{children:"El modulo se fabrica en solamente 30 dias, siendo la empresa N\xB01 en este aspecto en el mercado."})]}),E("div",{className:"BenefitsBox",children:[E("div",{children:[p(W1,{}),E("h4",{onClick:e,children:["Llave en mano & 100% equipado",p($t,{})]})]}),p("p",{children:"El Modulo se entrega completamente equipado, listo para ser habitado. Viene con electrodom\xE9sticos como heladera, TV Smart 32\u2019, aire acondicionado, microondas y horno. Adem\xE1s, viene completo en muebler\xEDa de primera calidad y alto dise\xF1o."})]}),E("div",{className:"BenefitsBox",children:[E("div",{children:[p(Q1,{}),E("h4",{onClick:e,children:["Economico",p($t,{})]})]}),p("p",{children:"Una de las virtudes de estas novedosas viviendas es que tiene costos m\xE1s bajos de los que se encuentran en el mercado, ofreciendo una oportunidad para pensar creativamente una soluci\xF3n que sea econ\xF3mica."})]}),E("div",{className:"BenefitsBox",children:[E("div",{children:[p(rh,{}),E("h4",{onClick:e,children:["Ampliable",p($t,{})]})]}),p("p",{children:"Es una construcci\xF3n ver vers\xE1til, siempre se podr\xE1 ampliar con nuevos m\xF3dulos, por lo que se puede empezar con un proyecto peque\xF1o y luego planificar nuevos anexos."})]}),E("div",{className:"BenefitsBox",children:[E("div",{children:[p(th,{}),E("h4",{onClick:e,children:["Excelente aislamiento",p($t,{})]})]}),p("p",{children:"Cuenta con termo paneles compuesto de aislaci\xF3n de espuma de poliuretano expandido de 50 mm en todas sus caras, otorgando un gran aislamiento t\xE9rmico para temperaturas extremas."})]}),E("div",{className:"BenefitsBox",children:[E("div",{children:[p(nh,{}),E("h4",{onClick:e,children:["Transportable",p($t,{})]})]}),p("p",{children:"Estos m\xF3dulos se caracterizan por ser movibles, asentandose sobre pilotes, siendo f\xE1cil de transportar y de instalar."})]}),E("div",{className:"BenefitsBox",children:[E("div",{children:[p(X1,{}),E("h4",{onClick:e,children:["Confort",p($t,{})]})]}),p("p",{children:"Est\xE1n dise\xF1adas para lograr un \xF3ptimo uso del espacio con el que se cuenta, siendo una soluci\xF3n creativa y moderna a las necesidades habitacionales de aquellos que quieren vivir con lo m\xE1s elemental sin sacrificar su comodidad."})]})]})]})}const xh="/ManuelChomer/assets/main.4f3a63b1.jpg",wh=pt.div`
+`;function yh(){const e=t=>{document.querySelectorAll(".benefits__container .benefits__box").forEach(n=>{n==t.target.parentNode.parentNode.parentNode?n.classList.toggle("active"):n.classList.remove("active")})};return E(vh,{id:"beneficios",children:[p("h6",{children:"Beneficios"}),E("h3",{children:["Sol Home te ofrece una soluci\xF3n ",p("span",{children:"\xFAnica"}),"."]}),E("div",{className:"benefits__container",children:[E("div",{className:"benefits__box",children:[E("div",{children:[p(Z1,{}),E("span",{onClick:e,children:[p("h4",{children:"Calidad"}),p($t,{})]})]}),p("p",{children:"Estos m\xF3dulos habitacionales cuentan con calidad de primera mano en todas sus materiales y terminaciones."})]}),E("div",{className:"benefits__box",children:[E("div",{children:[p(Y1,{}),E("span",{onClick:e,children:[p("h4",{children:"Rapidez"}),p($t,{})]})]}),p("p",{children:"El modulo se fabrica en solamente 30 dias, siendo la empresa N\xB01 en este aspecto en el mercado."})]}),E("div",{className:"benefits__box",children:[E("div",{children:[p(W1,{}),E("span",{onClick:e,children:[p("h4",{children:"Llave en mano & 100% equipado"}),p($t,{})]})]}),p("p",{children:"El Modulo se entrega completamente equipado, listo para ser habitado. Viene con electrodom\xE9sticos como heladera, TV Smart 32\u2019, aire acondicionado, microondas y horno. Adem\xE1s, viene completo en muebler\xEDa de primera calidad y alto dise\xF1o."})]}),E("div",{className:"benefits__box",children:[E("div",{children:[p(Q1,{}),E("span",{onClick:e,children:[p("h4",{children:"Economico"}),p($t,{})]})]}),p("p",{children:"Una de las virtudes de estas novedosas viviendas es que tiene costos m\xE1s bajos de los que se encuentran en el mercado, ofreciendo una oportunidad para pensar creativamente una soluci\xF3n que sea econ\xF3mica."})]}),E("div",{className:"benefits__box",children:[E("div",{children:[p(rh,{}),E("span",{onClick:e,children:[p("h4",{children:"Ampliable"}),p($t,{})]})]}),p("p",{children:"Es una construcci\xF3n ver vers\xE1til, siempre se podr\xE1 ampliar con nuevos m\xF3dulos, por lo que se puede empezar con un proyecto peque\xF1o y luego planificar nuevos anexos."})]}),E("div",{className:"benefits__box",children:[E("div",{children:[p(th,{}),E("span",{onClick:e,children:[p("h4",{children:"Excelente aislamiento"}),p($t,{})]})]}),p("p",{children:"Cuenta con termo paneles compuesto de aislaci\xF3n de espuma de poliuretano expandido de 50 mm en todas sus caras, otorgando un gran aislamiento t\xE9rmico para temperaturas extremas."})]}),E("div",{className:"benefits__box",children:[E("div",{children:[p(nh,{}),E("span",{onClick:e,children:[p("h4",{children:"Transportable"}),p($t,{})]})]}),p("p",{children:"Estos m\xF3dulos se caracterizan por ser movibles, asentandose sobre pilotes, siendo f\xE1cil de transportar y de instalar."})]}),E("div",{className:"benefits__box",children:[E("div",{children:[p(X1,{}),E("span",{onClick:e,children:[p("h4",{children:"Confort"}),p($t,{})]})]}),p("p",{children:"Est\xE1n dise\xF1adas para lograr un \xF3ptimo uso del espacio con el que se cuenta, siendo una soluci\xF3n creativa y moderna a las necesidades habitacionales de aquellos que quieren vivir con lo m\xE1s elemental sin sacrificar su comodidad."})]})]})]})}const xh="/ManuelChomer/assets/main.4f3a63b1.jpg",wh=pt.div`
     width: 100%;
     height: max-content;
     padding: 80px 20px;
