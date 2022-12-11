@@ -4,7 +4,7 @@ import {
     BsTelephone,
     BsPlay
 } from 'react-icons/all';
-// import Modal from './Modal';
+import Modal from './Modal';
 
 const StyledMain = styled.main`
     width: 100%;
@@ -188,8 +188,8 @@ export default function Main() {
         setOpenModal(true);
     }
 
-    const handleClose = (value) => {
-        setOpenModal(value);
+    const handleClose = () => {
+        setOpenModal(false);
     }
 
     return (
@@ -204,6 +204,7 @@ export default function Main() {
                     onClick={handleClick}>
                     <BsPlay />
                 </button>
+                <Modal openModal={openModal} handleClose={handleClose} />
             </div>
         </StyledMain>
     )

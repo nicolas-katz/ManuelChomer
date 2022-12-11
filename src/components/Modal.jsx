@@ -1,119 +1,96 @@
-// import { Fragment, useRef, useState, useEffect } from 'react';
-// import { Dialog, Transition } from '@headlessui/react';
-// import video from '../assets/video.mp4';
-// import styled from 'styled-components';
-// import { 
-//     IoClose 
-// } from 'react-icons/all';
+import React from 'react';
+import video from '../assets/video.mp4';
+import styled from 'styled-components';
+import { 
+    IoClose 
+} from 'react-icons/all';
 
-// export default function Modal({openModal, handleClose}) {
-//   return(
-//     <div>
-//       <div>
-//         <IoClose onClick={handleClose} />
-//         <video src={video} controls></video>
-//       </div>
-//     </div>
-//   );
-// };
+const StyledModal = styled.div`
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
 
-// const StyledVideo = styled.video`
-//     width: 100%;
-//     max-height: 500px;
-//     margin-top: 60px;
-//     padding: 20px;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
 
-//     object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-//     @media only screen and (min-width: 425px) {
-//       min-width: 380px;
-//     }
+    background-color: #00000078;
 
-//     @media only screen and (min-width: 540px) {
-//       min-width: 500px;
-//     }
+    visibility: hidden;
 
-//     @media only screen and (min-width: 768px) {
-//       min-width: 600px;
-//       margin-top: 80px;
-//     }
-// `;
+    &.active {
+        z-index: 100;   
 
-// export default function Modal({openModal, handleClose}) {
-//   const [open, setOpen] = useState(false)
+        visibility: visible;
+    }
 
-//   useEffect(()=> {
-//     setOpen(openModal);
-//     handleClose(openModal);
-//   });
+    & div.modal__container {
+        position: relative;
 
-//   const handleClick = () => {
-//     setOpen(false);
-//     handleClose(false);
-//   }
+        width: 100%;
+        min-width: 280px;
+        max-width: 500px;
+        height: 100%;
+        min-height: 200px;
+        max-height: 400px;
 
-//   const cancelButtonRef = useRef(null)
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
-//   return (
-//     <Transition.Root show={open} as={Fragment}>
-//       <Dialog as="div" className="relative z-10" initialFocus={cancelButtonRef} onClose={handleClick}>
-//         <Transition.Child
-//           as={Fragment}
-//           enter="ease-out duration-300"
-//           enterFrom="opacity-0"
-//           enterTo="opacity-100"
-//           leave="ease-in duration-200"
-//           leaveFrom="opacity-100"
-//           leaveTo="opacity-0"
-//         >
-//           <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
-//         </Transition.Child>
+        & span {
+            position: absolute;
+            top: -40px;
+            right: 0;
 
-//         <div className="fixed inset-0 z-10 overflow-y-auto">
-//           <div className="flex min-h-full justify-center text-center">
-//             <Transition.Child
-//               as={Fragment}
-//               enter="ease-out duration-300"
-//               enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-//               enterTo="opacity-100 translate-y-0 sm:scale-100"
-//               leave="ease-in duration-200"
-//               leaveFrom="opacity-100 translate-y-0 sm:scale-100"
-//               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-//             >
-//               <Dialog.Panel 
-//                 className="relative transform overflow-hidden transition-all"
-//                 >
-//                   <div 
-//                     onClick={handleClick}
-//                     style={{
-//                       position: 'absolute',
-//                       top: '32px',
-//                       right: '20px',
-//                       display: 'flex',
-//                       flexDirection: 'row',
-//                       alignItems: 'center',
-//                       justifyContent: 'center',
-//                       cursor: 'pointer',
-//                       color: 'white',
-//                       fontSize: '14px'
-//                     }}>
-//                     <IoClose 
-//                       style={{
-//                         marginRight: '4px',
-//                       }}
-//                     />
-//                     CERRAR
-//                   </div>
-//                   <StyledVideo
-//                     src={video} 
-//                     controls
-//                   >
-//                   </StyledVideo>
-//               </Dialog.Panel>
-//             </Transition.Child>
-//           </div>
-//         </div>
-//       </Dialog>
-//     </Transition.Root>
-//   );
-// };
+            width: 28px;
+            height: 28px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border: 1px solid white;
+            border-radius: 50%;
+            cursor: pointer;
+
+            svg {
+                color: white;
+                font-size: 22px;
+            }
+        }
+
+        & video {
+            width: 100%;
+            height: 100%;
+
+            border: none;
+            border-radius: 1px;
+
+            object-fit: cover;
+        }
+    }
+`;
+
+export default function Modal({openModal, handleClose}) {
+    return(
+        <StyledModal className={openModal && 'active'}>
+            <div className='modal__container'>
+                <span>
+                    <IoClose onClick={() => handleClose()} />
+                </span>
+                <video 
+                    src={openModal ? video : ''} 
+                    controls>
+                </video>
+            </div>
+        </StyledModal>
+    );
+};
