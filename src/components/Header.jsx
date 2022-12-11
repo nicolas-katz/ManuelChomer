@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import brand from '../assets/brand.png';
+import brochure from '../assets/brochure.pdf';
 
 const StyledHeader = styled.header`
     position: fixed;
@@ -280,7 +281,7 @@ export default function Header() {
                         </div>
                         <div>
                             <h5>Descargas</h5>
-                            <a href='/' target='_blank' rel="noopener noreferrer">Brochure</a>
+                            <a href={brochure} target='_blank' rel="noopener noreferrer">Brochure</a>
                         </div>
                     </div>
                 </ul>

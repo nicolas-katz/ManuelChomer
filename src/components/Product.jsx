@@ -4,8 +4,9 @@ import {
     BsCheck2,
     BsCloudDownload
 } from 'react-icons/all';
-import Foto from '../assets/image3.jpg';
+import Foto from '../assets/image6.jpg';
 import Slider from './Slider';
+import brochure from '../assets/brochure.pdf';
 
 const StyledFirstDiv = styled.div`
     width: 100%;
@@ -290,7 +291,7 @@ export default function Product() {
                         Un hogar confortable y funcional para sus necesidades, con lo más elemental sin sacrificar su comodidad.
                     </p>
                 </div>
-                <a href="/" target='_blank' rel="noopener noreferrer">
+                <a href={brochure} target='_blank' rel="noopener noreferrer">
                     Brochure <BsCloudDownload />
                 </a>
             </div>

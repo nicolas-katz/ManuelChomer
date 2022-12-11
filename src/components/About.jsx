@@ -128,8 +128,8 @@ export default function About() {
             <h6>Compañía</h6>
             <h3>Tu empresa de <strong>confianza</strong>.</h3>
             <p>
-                Sol Home es una empresa dedicada a la fabricación y comercialización de Micro Viviendas modulares, las cuales se caracterizan por su alta calidad de estructura y diseño, y por su poco tiempo de fabricación. <br></br><br></br>
-                Dedicados toda la vida a la construcción, comenzamos esta nueva etapa con el deseo de abastecer espacios habitacionales óptimos para vivir y disfrutar.
+                Sol Home es una empresa dedicada a la fabricación y comercialización de Micro Viviendas modulares, las cuales se caracterizan por su alta calidad de estructura y diseño, por su poco tiempo de fabricación y por la oportunidad económica que representa.
+                Dedicados toda la vida a la construcción, comenzamos esta nueva etapa con el deseo de abastecer espacios habitacionales óptimos para vivir y disfrutar.            
             </p>
             <a href="#contacto">Conoce más <BsTelephone /></a>
         </div>

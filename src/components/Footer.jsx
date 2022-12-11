@@ -5,7 +5,7 @@ import {
   FaFacebookF
 } from 'react-icons/all';
 import brand from '../assets/brand.png';
-
+import brochure from '../assets/brochure.pdf';
 
 const StyledFooter = styled.footer`
   position: relative;
@@ -263,7 +263,7 @@ export default function Footer() {
               alt='Sol Home - Micro Viviendas'
             />
           </a>
-          <h4>Estamos en</h4>
+          <h4>Proximamente en</h4>
           <a 
             href="https://goo.gl/maps/56xMuLBH1Sko2VwV7" 
             target="_blank" 
@@ -276,7 +276,7 @@ export default function Footer() {
             <h4>Productos</h4>
             <a href="#productos">Modulos</a>
             <a href="#galeria">Galería</a>
-            <a href="/">Brochure</a>
+            <a href={brochure} target='_blank' rel="noopener noreferrer">Brochure</a>
           </div>
           <div>
             <h4>Nosotros</h4>

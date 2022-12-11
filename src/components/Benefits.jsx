@@ -192,7 +192,7 @@ export default function Benefits() {
                 element.classList.remove('active');
             }
         })
-    }
+    };
 
     return (
         <StyledBenefits
@@ -208,7 +208,7 @@ export default function Benefits() {
                             <BsChevronDown />
                         </h4>
                     </div>
-                    <p>Construcción de módulos con sistemas Steel Framing. Agregar conceptos de durabilidad.</p>
+                    <p>Estos módulos habitacionales cuentan con calidad de primera mano en todas sus materiales y terminaciones.</p>
                 </div>
                 <div className='BenefitsBox'>
                     <div>
@@ -258,7 +258,7 @@ export default function Benefits() {
                             <BsChevronDown />
                         </h4>
                     </div>
-                    <p>Cuenta con termo paneles compuesto de aislación de espuma de poliuretano expandido de 50 mm en todas sus caras, otorgando un gran aislamiento térmico siendo muy útil para zonas de frío, calor y vientos extremos.</p>
+                    <p>Cuenta con termo paneles compuesto de aislación de espuma de poliuretano expandido de 50 mm en todas sus caras, otorgando un gran aislamiento térmico para temperaturas extremas.</p>
                 </div>
                 <div className='BenefitsBox'>
                     <div>

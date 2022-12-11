@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import {
   BsCloudDownload
 } from 'react-icons/all';
+import brochure from '../assets/brochure.pdf';
 
 const StyledBrochure = styled.div`
     width: 100%;
@@ -137,7 +138,7 @@ export default function Brochure() {
               <h4>Conoce más nuestras micro viviendas</h4>
               <p>Descargate nuestro brochure para enterarte de todos los detalles y sacarte todas tus dudas.</p>
           </span>
-          <a href="/" target='_blank' rel="noopener noreferrer">Descargar <BsCloudDownload /></a>
+          <a href={brochure} target='_blank' rel="noopener noreferrer">Descargar <BsCloudDownload /></a>
         </div>
     </StyledBrochure>
   )
