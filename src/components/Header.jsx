@@ -224,7 +224,7 @@ const StyledHeader = styled.header`
     }
 
     @media only screen and (min-width: 1200px) {
-        padding: 20px 200px;
+        padding: 20px 140px;
     }
 `;
 

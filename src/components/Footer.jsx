@@ -75,7 +75,7 @@ const StyledFooter = styled.footer`
   }
 
   @media only screen and (min-width: 1200px) {
-    padding: 100px 200px;
+    padding: 100px 140px;
 
     & div.FooterNavigation {
       & div {
@@ -249,6 +249,23 @@ const StyledFooter = styled.footer`
       font-size: 16px;
       line-height: 26px;
       font-weight: 300;
+
+      a {
+        width: max-content;
+        padding-bottom: 2px;
+
+        border-bottom: 1px solid black;
+        transition: all .6s;
+
+        color: black;
+        text-decoration: none;
+
+        &:hover {
+          border-color: gray;
+
+          color: gray;
+        }
+      }
     }
   }
 `;
@@ -318,7 +335,7 @@ export default function Footer() {
             </div>
         </div>
         <div className="FooterCopyright">
-          <h6>Todos los derechos reservados. © Sol Home 2022</h6>
+          <h6>Todos los derechos reservados. © Sol Home 2022. Desarrollado por <a href="https://www.linkedin.com/in/nicokatz/" target="_blank" rel="noopener noreferrer">Nicolas Katz</a>.</h6>
         </div>
       </StyledFooter>
     )

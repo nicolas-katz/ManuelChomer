@@ -134,7 +134,7 @@ const StyledFirstDiv = styled.div`
 
     @media only screen and (min-width: 768px) {
        & img {
-        height: 420px;
+            height: 420px;
        }
 
         & div {
@@ -168,8 +168,8 @@ const StyledFirstDiv = styled.div`
        justify-content: space-between;
 
        & img {
-        width: 45%;
-        height: 660px;
+        width: 50%;
+        height: 700px;
        }
 
        & div {
@@ -189,13 +189,16 @@ const StyledFirstDiv = styled.div`
     }
 
     @media only screen and (min-width: 1200px) {  
-        padding: 0 200px;
+        padding: 0 140px;
 
         & img {
-            height: 700px;
+            width: 55%;
+            height: 740px;
         }
 
         & div {
+            width: 40%;
+
             & h3 {
                 width: 80%;
             }

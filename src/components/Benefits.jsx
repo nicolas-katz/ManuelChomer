@@ -174,7 +174,7 @@ const StyledBenefits = styled.div`
     }
 
     @media only screen and (min-width: 1200px) {
-        padding: 100px 200px;
+        padding: 100px 140px;
 
         & h3 {
             width: 70%;

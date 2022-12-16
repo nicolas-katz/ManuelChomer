@@ -7,6 +7,7 @@ import {
     BsTelephone,
     FiMapPin
 } from 'react-icons/all';
+import { SERVICE_ID, TEMPLATE_ID, USER_KEY } from '../constants/emailjs.constant';
 
 const StyledContact = styled.div`
     width: 100%;
@@ -269,7 +270,7 @@ const StyledContact = styled.div`
     }    
 
     @media only screen and (min-width: 1200px) {
-        padding: 80px 200px;  
+        padding: 80px 140px;  
     }
 `;
 
@@ -278,7 +279,7 @@ export default function Contact() {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_e6bwg0p', 'template_qp5qslq', form.current, 'hwH8wj1eN-3bQW7te')
+        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, USER_KEY)
             .then(() => {
                 document.querySelector("form button").classList.add("sendMail");
                 document.querySelector("form button").innerHTML = `Enviado`;

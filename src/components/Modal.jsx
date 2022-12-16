@@ -21,6 +21,7 @@ const StyledModal = styled.div`
     justify-content: center;
 
     background-color: #00000078;
+    transition: all .3s;
 
     visibility: hidden;
 

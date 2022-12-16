@@ -177,7 +177,7 @@ const StyledMain = styled.main`
     }
 
     @media only screen and (min-width: 1200px) {
-        padding: 200px 200px 80px 200px;   
+        padding: 200px 140px 80px 140px;   
     }
 `;
 

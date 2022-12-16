@@ -12,7 +12,6 @@ import Chat from './components/Chat';
 export default function App() {
     return (
         <div>
-
           <Header />
           <Main />
           <Product />
@@ -22,7 +21,6 @@ export default function App() {
           <Contact />
           <Footer />
           <Chat />
-
         </div>
     );
 };

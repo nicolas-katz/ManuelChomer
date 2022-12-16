@@ -110,7 +110,7 @@ const StyledAbout = styled.div`
     }
 
     @media only screen and (min-width: 1200px) {
-        padding: 80px 200px 0 200px;
+        padding: 80px 140px 0 140px;
     }
 `;
 
